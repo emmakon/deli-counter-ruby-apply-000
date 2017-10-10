@@ -1,18 +1,18 @@
 katz_deli = []
 
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+i = 0
+
+def take_a_number(katz_deli)
+  i += 1
+  katz_deli.push(i)
+  puts "Welcome. You are number #{i} in line."
 end
 
 def line(katz_deli)
 if katz_deli.empty?
   puts "The line is currently empty."
 else
-  new_line = []
-  katz_deli.each_with_index {|person_name, index|
-  new_line.push("#{index + 1}. #{person_name}")}
-  puts "The line is currently: " + new_line.join(" ")
+puts katz_deli
 end
 end
 
